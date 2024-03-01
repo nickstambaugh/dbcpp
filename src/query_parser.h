@@ -10,7 +10,7 @@ public:
     std::string parse(const std::string& query);
 
 private:
-    // Your implementation details here
+    // todo
 };
 
 #endif

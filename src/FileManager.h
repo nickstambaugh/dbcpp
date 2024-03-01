@@ -28,7 +28,6 @@ public:
     static bool deleteData(const std::string& filename, const std::string& dataToDelete) {
         std::vector<std::string> lines = readFile(filename);
 
-        // Remove all occurrences of dataToDelete from lines
         lines.erase(std::remove_if(lines.begin(), lines.end(), [&dataToDelete](const std::string& line) {
             return line == dataToDelete;
         }), lines.end());
